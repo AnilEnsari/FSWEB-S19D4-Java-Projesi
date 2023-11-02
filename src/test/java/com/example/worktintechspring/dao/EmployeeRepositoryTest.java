@@ -64,7 +64,7 @@ class EmployeeRepositoryTest {
         List<Employee> earnerEmployees = employeeRepository.findBySalary(35000.0);
         assertEquals("Icardi", earnerEmployees.get(0).getLastName());
         List<Employee> nullEmployees = employeeRepository.findBySalary(200000.0);
-     //   assertEquals("[]",nullEmployees);
+        assertEquals(0, nullEmployees.size());
 
     }
 
