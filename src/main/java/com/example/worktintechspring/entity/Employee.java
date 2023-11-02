@@ -26,6 +26,6 @@ private String lastName;
     private String email;
 
     @Column(name = "salary")
-    private String salary;
+    private double salary;
 }
 
